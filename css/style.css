@@ -1,0 +1,182 @@
+:root{
+    --color1: #035928;
+    --color2: #f28705;
+    --color3:  #d4d959;
+    --color4: white;
+    --color5: black;
+    
+ }
+ 
+@font-face{
+    font-family: 'spartan';
+    font-weight: 700;
+    src: url("../assets/fonts/LeagueSpartan-Bold.woff");
+} 
+
+@font-face{
+    font-family: 'spartan';
+    font-weight: 800;
+    src: url("../assets/fonts/LeagueSpartan-ExtraBold.woff");
+    font-weight: 800;
+}
+
+@font-face{
+    font-family: 'spartan';
+    font-weight: 900;
+    src: url("../assets/fonts/LeagueSpartan-Black.woff");
+    
+}
+
+@font-face{
+    font-family: 'poppins';
+    font-weight: 400;
+    src: url('../assets/fonts/poppins-regular-webfont.woff2') format('woff2'), url('/assets/fonts/poppins-regular-webfont.woff') format('woff'); 
+}
+
+body{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--color1);
+ }
+
+.box-shadow{
+    box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+    
+}
+
+.text-shadow{
+    text-shadow: 0 3px 3px rgba(0,0,0,0.6);
+}
+
+.tverde{
+    color: var(--color3);
+}
+
+.fverde{
+    background-color: var(--color3);
+}
+
+.navbar{
+    background-color: var(--color5);
+} 
+ 
+
+nav .logo{
+    width: 150px;
+    margin: 0px 0px 0px 0px;
+    clip-path: circle(45% at center);
+}
+
+.navbar-dark .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28217, 217, 89, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+nav li{
+    font-family: 'spartan';
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+
+    margin: 0px 30px;
+}
+
+nav a:hover{
+    color: #f28705 !important;
+    text-decoration-line: underline;
+    transform: scale(1.1);
+}
+
+.t-principal{
+    font-family: 'spartan';
+    color: var(--color3);
+}
+
+.f-verde{
+    background-image: url(../assets/img/SOMBRERON.png);
+    background-size: cover;
+}
+
+/*CARDS INICIO*/
+
+.card-header.ct1, .card-title.ct1{
+    font-family: "spartan";
+    color: var(--color1);
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.card-header.ct2{
+    font-family: "spartan";
+    color: var(--color5);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.card-body.cb1{
+    background: url(../assets/img/El\ cadejo\ blanco.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-body.cb2{
+    background: url(../assets/img/LLORONA.jpg);
+    background-position:top;
+
+}
+
+.card-body.cb3{
+    background: url(../assets/img/CURUPIRA\ BRAZIL.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.resalto{
+    transition: transform 0.5s;
+}
+.resalto:hover{
+    cursor: pointer;
+    transform: translatey(-20px);
+    border-color: var(--color2);
+    border-width: 3px;
+    border-style: dashed;
+    background: rgba(255, 255, 255, 0.875);
+}
+
+#contactanos_footer i{
+    font-size: 25px;
+    color: var(--color3);
+}
+
+
+
+
+
+@media (max-width: 720px){
+    #mainSlider{margin-top: 150px;}
+    .f-verde{
+        background-color: transparent;
+        background-image: none;
+        margin-bottom: 10px;
+    }
+    .card-body.cb0{
+        background: url(../assets/img/SOMBRERON.png);
+        background-position: top;
+        background-size: cover;
+    }
+    .card-header.ct1{
+        font-family: "spartan";
+        color: var(--color5);
+        font-size: 2rem;
+        text-decoration: underline;
+        padding: 5px 48px 5px 48px;
+    }
+}
+
+
+
+
+
+
+
+
