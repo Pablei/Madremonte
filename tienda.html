@@ -3,38 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
-    <!--link css de bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css ">
+    <title>madremonte_tienda
+
+    </title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-            <!--logo-->
-            <a class="nav-item logo1" aria-current="page" href="./home.html">
-                <img src="./assets/img/MADREMONTE.png" width="150px" alt="logo_madremonte">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="./tienda.html">TIENDA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./responsabilidad.html">RESPONSABILIDAD</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./recetas.html">RECETAS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactanos.html">CONTACTANOS</a></li>
-                </ul>
+<body id="tienda">
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/home.html">
+            <img src="./assets/img/MADREMONTE.png" alt="logo_madremonte" class="logo" width="150px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./tienda.html">TIENDA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./responsabilidad.html">RESPONSABILIDAD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./recetas.html">RECETAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactanos.html">CONTACTANOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--NAVBAR FIN-->
+    <!--productos premium-->
+    <div class="container-fluid" style="height: 150px;">
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-md d-flex align-items-center f-verde">
+              <div class="card text-center mx-1">
+                  <div class="card-header ct1">
+                    SOMBRERON COLOMBIA
+                  </div>
+                  <div class="card-body cb0">
+                    <h5 class="card-title fs-4 fw-bolder container p-3 w-50  bg-warning rounded-pill  box-shadow">TOSTADO MEDIO</h5>
+                    <p class="card-text d-none d-md-block">Descubre los frutos maduros de los abundantes valles monatañosos de Colombia. Notas de caramelo y chocolate en balance de los ciruelos calidos brillantes dan una espectacular, suave y rica terminación</p>
+                  </div>
+                </div>
+                
+          </div>
+          <div class="col-md">
+              <div class="card text-center mb-4 ">
+                  <div class="card-header ct2">
+                    CADEJO BLANCO COSTA RICA
+                  </div>
+                  <div class="card-body cb1">
+                    <h5 class="card-title fs-4 fw-bolder container p-3 w-50  bg-warning rounded-pill box-shadow">DULCE Y CREMOSO</h5>
+                  </div>
+              
+              </div>
+              <div class="card text-center mb-4">
+                  <div class="card-header ct2">
+                    LA LLORONA MÉJICO
+                  </div>
+                  <div class="card-body cb2">
+                    <h5 class="card-title fs-4 fw-bolder container p-3 w-50  bg-warning rounded-pill box-shadow">LIGERO ESPECIADO</h5>
+                  </div>
+              </div>
+              <div class="card text-center">
+                  <div class="card-header ct2">
+                    CURUPIRA BRASIL
+                  </div>
+                  <div class="card-body cb3">
+                    <h5 class="card-title fs-4 fw-bolder container p-3 w-50  bg-warning rounded-pill box-shadow">TOSTADO OSCURO</h5>           
+                  </div>
+              </div>
+                
+          </div>
+      </div>
+  </div>
 
-            </div>
+  <!--productos premium FIN-->
 
+   <!--zona de productos-->
+   <div class="container-fluid p-4 fverde mt-4">
+    <div class="row text-center">
+      <h2 class="text-success fw-bold text-shadow h1 my-5">CONOCE NUESTROS PRODUCTOS</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="card p-5 rounded-3 box-shadow mb-4 resalto" style="width: 400px;">
+          <img src="./assets/img/CAFE 1.png" class="card-img-top w-50 rounded mx-auto d-block" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title h3 fw-bolder ct1">Café Molido</h5>
+            <h2 class="card-text">$14.50</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card p-4 box-shadow mb-4 resalto" style="width: 400px;height: 530px;">
+          <img src="./assets/img/CAFE 2.png" class="card-img-top rounded mx-auto " alt="..." style="width: 150px;">
+          <div class="card-body text-center">
+            <h5 class="card-title h3 fw-bolder ct1">Café en grano</h5>
+            <h2 class="card-text">$12.00</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card p-4 box-shadow mb-4 resalto" style="width: 400px;height: 530px;">
+          <img src="./assets/img/CAFE 3.jpg" class="card-img-top rounded mx-auto " alt="..." style="width: 150px;">
+          <div class="card-body text-center">
+            <h5 class="card-title h3 fw-bolder ct1">Cápsulas Espresso</h5>
+            <h2 class="card-text">$20.00</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card p-4 box-shadow resalto" style="width: 400px;height: 530px;">
+          <img src="./assets/img/CAFETERA.jpg" class="card-img-top rounded mt-5 mx-auto" alt="..." style="width: 300px;">
+          <div class="card-body text-center">
+            <h5 class="card-title h3 fw-bolder ct1 mt-3">Cafetera</h5>
+            <h2 class="card-text">$35.00</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <a href="./tienda.html">
+        <button class="btn-lg rounded-pill box-shadow bg-warning w-10 p-3 fw-bolder my-4 resalto">Conoce Mas</button>
+        </a>
+    </div>
+  </div>
+  <footer class="bg-dark text-white pt-5 pb-4" id="contactanos_footer">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase fw-bolder mt-5 text-warning">Madremonte latin coffee</h5>
+          <p>Con tu compra apoyas a más de 540.000 familias caficultoras</p>
         </div>
 
-    </nav>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase md-4 font-weight-bolder text-warning">Terminos y condiciones</h5>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Terminos y condiciones</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Politica de tratamiento de datos</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Entrega de productos</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Preguntas frecuentes</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Promociones</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase md-4 font-weight-bold text-warning">contactanos</h5>
+          <p>
+            <i class="bi bi-house-heart mt-3"></i>Antioquia, Medellín, CO
+          </p>
+          <p>
+            <i class="bi bi-telephone-fill"></i>(601) 482 42 59 - 01 8000 705011
+          </p>
+          <p>
+            <i class="bi bi-clock"></i>Lunes a viernes de 8am a 5pm, Sábados 8am a 12m
+          </p>
+          
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p>Copyright 2023 All rights reserved by:
+            <strong class="text-warning">Madremonte Latin Coffee</strong>
+          </p>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm"><i class="bi bi-instagram"></i></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
